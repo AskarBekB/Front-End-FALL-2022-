@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in || Sign up from</title>
+     <!-- font awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="login-page.css">
+</head>
+<body>
+    <form id="big-form" action="submit">
+    <div class="center">
+        <div class="btns">
+            <a class="a1" href="#">Sign up</a>
+            <a class="a2" href="#">Login up</a>
+        </div>
+
+
+        <div class="signup-form">
+        <div class="header">Sign UP</div>
+        <form action="">
+            <input type="text" placeholder="Firstname">
+            <input class="lstname" type="text" placeholder="LastName">
+            <input class="email" type="text" placeholder="Email or Phone" id="sign_username" name="username">
+            <input class="email" type="password" id="sign_pass" placeholder="Password" id="sign_password" name="password" required>
+            <input onclick="store()" class="sign-sub" type="submit" value="Sign up">
+        </form>
+        </div>
+
+
+        <div class="login-form">
+            <div class="header header1">Login UP</div>
+            <form action="">
+                <input class="email" type="text" placeholder="Email or Phone" id="login_username">
+                <input class="email" type="password" name="login_pass" id="login_pass" placeholder="Password">
+                <inpu onclick="login()" class="log-sub" type="submit" value="Login up">
+            </form>
+        </div>
+
+    </div>
+    </form>
+    <script src="login-page.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+.Name{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.Job{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+.Intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.movies .first_movie{
+    display: block;
+}
+.movies .first_movie .father{
+    display: inline-block;
+    text-decoration-style: none;
+    margin: bottom 20px;;
+    font-family:'Old English Text MT';
+}
+.movies .first_movie img{
+    margin-top: 15px;
+}
+
+.movies .second_movie .batman{
+    display: inline-block;
+    text-decoration-style: none;
+    margin: top 15px;
+    font-family: 'Jokerman';
+}

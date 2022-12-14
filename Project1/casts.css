@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262622;
+    font-family: sans-serif;
+}
+button{
+    margin: 10px 0 0 10px;
+    color: rgba(232, 209, 34, 0.768);
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid rgba(213, 227, 19, 0.768);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    width: 300px;
+    height: 300px;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.container .box .info{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .info{
+    transform: scale(1);
+}
+
+.container .box .info .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    padding: 15%;
+}
+
+.container .box .info .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+.container .box .info .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgb(219, 203, 28), rgb(29, 16, 17), rgb(180, 161, 16));
+        font-family: sans-serif;
+    }
+    
+.container{
+    width: 500px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgba(195, 195, 71, 0.133);
+    margin: 10px 10px 10px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 22%;
+}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgb(104, 28, 219), rgb(147, 23, 106), rgb(57, 7, 123));
+        font-family: sans-serif;
+    }
+    .container{
+        width: 900px;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+}

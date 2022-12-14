@@ -1,0 +1,69 @@
+body{
+    margin: 0 auto;
+    min-width: 1400px;
+    color:white
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 200px 10px ;
+    border-bottom: 3px solid white;
+
+}
+
+.logo{
+    display: flex;
+    background-color: darkblue;
+    color:white;
+    padding: 20px 25px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#v_hr{
+    margin: 0 100px;
+}
+.donate{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    width: 130px;
+    height: 48px auto;
+    float:right;
+    background-color: darkblue;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: -70px, 200px 0 200px;
+}
+.donate div{
+    columns: auto;
+
+}
+.search{
+    float:right;
+    margin: -70px 200px 0 0;
+}
+.search textarea{
+    padding: 10px;
+    resize: none;
+    columns: auto;
+}
+
+.main{
+    background-image: url(https://static.tildacdn.com/tild3166-3935-4030-a662-363833373062/2019_02_13_t04.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    padding: 100px 0px 0 200px;
+}
+
+.main h1{
+    margin: 0%;
+    font-family: "Akrobat", Sans-serif;
+    font-size: 55px;
+    letter-spacing: 15%;
+}

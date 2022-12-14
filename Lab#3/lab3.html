@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <div class="info">
+        <div class="first">
+        <img src="https://sun1-98.userapi.com/s/v1/if1/UNfK8TJNokdWUfPWXmkJXILojlZQdyGL7QQabYDg1cR3Jy8jYIYQq7hCQBHe5pxvoKBWJ51Q.jpg?size=200x200&quality=96&crop=144,55,283,283&ava=1">
+        <div class="about">
+             <h1>Askar Bekbergen</h1>
+             <h4>Informational System Owner</h1>
+        </div>
+        </div>
+        <div class="second">
+            <p>I love UFC and Gyber-Figther @EA SPORTS.UFC4</p>
+             <br>
+             <p>I like play with friends and my favourite fighter: Conor, Khabib,Tony and GSP</p>
+             <div>You can call me: <div class=" number">8-747-525-55-86</div></div>
+        </div>
+    </div>
+    <div class="logo">
+        <img id="bap" src="https://avatars.mds.yandex.net/i?id=e5baecad85d9f10346b5e1c31ad81425-5848407-images-thumbs&n=13">
+    </div>
+
+    <div class="header bg-dark">
+        <button onclick="loaction.href=''" type="button">Home</button>
+        <button onclick="location.href='page2.html'" type="button">About Us</button>
+        
+        <button onclick="location.href='lab4.html'">Contacts</button>
+    </div>
+    <div class="reserved">Everything is reserved by you!</div>
+</body>
+
+<script>
+    window.addEventListener('scroll', ()=>{
+        const scrollable = document.documentElement.scrollHeight-window.innerHeight;
+        const scrolled=window.scrollY;
+        if(Math.ceil(scrolled)===scrollable){
+            document.getElementById("bap").style.display='block';
+        } 
+    });
+</script>
+</html>

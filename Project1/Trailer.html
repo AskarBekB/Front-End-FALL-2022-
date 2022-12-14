@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(https://images3.alphacoders.com/869/869848.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        h1{
+            font-size: 45px;
+            text-align: center;
+            justify-items: center;
+            word-spacing: 25px;
+            text-transform: uppercase;
+            text-decoration-line: underline;
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 3px  2px gold;
+        }
+        .top{
+            display: inline;
+            justify-content: space-between;
+        }
+        .video{
+            align-items: center;
+            margin: 25px;
+        }
+        button{
+        color: rgba(232, 209, 34, 0.768);
+        padding: 10px 25px;
+        background: transparent;
+        border: 2px solid rgba(213, 227, 19, 0.768);
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+}
+        video{
+            width: 100%;
+            height: 100%;
+            box-shadow: 30px 20px 8px 0 rgba(0, 0, 0, 0.23), 20px 10px 20px 0 rgba(0, 0, 0, 0.444);
+            text-align: center;
+        }
+
+        @media screen and (max-width:500px) {
+            body{
+                background: rgba(26, 14, 105, 0.956);
+                background-position: center;
+                width: 500px;
+                height: 500px;
+            }
+        }
+        @media screen and (max-width: 1000px) and (min-width: 500px) {
+            body{
+                background: rgba(26, 14, 105, 0.956);
+                background-position: center;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video">
+        <div class="top">
+        <button onclick='location="/Users/Acer/Desktop/HTML/Project1/BackgroundImage.html"' type="button">&lArr;Home</button>
+        <h1>Titanic</h1>
+        </div>
+
+    <video controls>
+        <source src="/Users/Acer/Downloads/videoplayback.mp4">
+    </video>
+    </div>
+</body>
+</html>

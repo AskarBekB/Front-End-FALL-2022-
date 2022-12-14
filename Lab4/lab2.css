@@ -1,0 +1,23 @@
+.body{
+    font-family: fantasy;
+}
+
+.uls .bold{
+    font-weight: bold;
+}
+
+.uls .italic{
+    font-style: italic;
+}
+
+.uls .Par{
+    margin-top: 20px;
+}
+.uls .img{
+    width: 450px;
+    height: 300px;
+}
+
+.table .th td{
+    
+}

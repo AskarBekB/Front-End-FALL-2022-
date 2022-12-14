@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Детективный</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <style> 
+    body{ 
+    margin: 4px auto; 
+    min-width: 1400px; 
+    color:white; 
+    background-color: #000000; 
+    } 
+    .zl{ 
+    font-size:90px; 
+    font-family:'Times New Roman', Times, serif; 
+    padding: 10px 200px; 
+} .b{ 
+    margin: 55px 0 0 200px; 
+    justify-content: space-around; 
+} 
+.button{ 
+    font-size: 12px; 
+    letter-spacing: 0.5px; 
+    font-family: 'SuisseIntl',Arial,sans-serif; 
+    text-transform: uppercase; 
+    background:transparent; 
+    height:28px; 
+    border-radius:60px; 
+    cursor:pointer; 
+    border: 2px solid white; 
+    color:white ;
+    width: 150px;
+    margin-top: 20px;
+}.button:hover{ 
+    font-size: 13px; 
+    background-color: #ffffff; 
+    color:rgb(0, 0, 0); 
+    border: 1px solid rgb(252, 252, 252); 
+}
+
+.film {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.film__block {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+    min-height: 300px;
+}
+
+.film__block_img {
+    width: 250px; 
+    height: 350px;
+
+}
+
+.film__block_headText {
+    margin-top: 30px;
+    
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.link{
+    text-decoration: none;
+}
+.left{
+    margin: -497px 0 0 38%;
+}
+
+
+</style> 
+</head> 
+
+<body>  
+   <div class="zl"> 
+    See Also Films </div> 
+ <div class="b"> 
+    <a href="/Users/Acer/Desktop/HTML/Project1/SeeAlso.html" class="link"> <button class="button ">Все</button></a>
+    <a href="/Users/Acer/Desktop/HTML/Project1/Detective.html" class="link"> <button class="button ">Детективный</button></a>
+    <a href="/Users/Acer/Desktop/HTML/Project1/Comedy.html" class="link"> <button class="button ">Комедия</button></a>
+    <a href="/Users/Acer/Desktop/HTML/Project1/Fantasy.html" class="link"> <button class="button ">Фантастика</button></a>
+ </div> 
+
+   <div class="container">
+
+       <div class="film">
+        <div class="film__block">
+            <div class="film__block_img">
+                <img src="/Users/Acer/Desktop/HTML/Project1/see/1611169-1632274.jpeg" alt="img" />
+            </div>
+            <div class="film__block_headText">
+                <h2><a href="https://www.kinopoisk.ru/film/12090/" class="link" style="color: #ffffff"> Мистер и миссис Смит</a></h2>
+                
+            </div>
+            <div class="film__block_year">
+                <p>Running time: 120 min</p>
+            </div>
+        </div>   
+       </div>
+       <div class="film__block left">
+        <div class="film__block_img">
+            <img src="/Users/Acer/Desktop/HTML/Project1/see/1619463-1584154.jpg" alt="img" />
+        </div>
+        <div class="film__block_headText">
+            <h2><a href="https://www.kinopoisk.ru/film/1091/" class="link" style="color: #ffffff">Люди в черном</a></h2>
+            
+        </div>
+        <div class="film__block_year">
+            <p>Running time: 98 min</p>
+        </div>
+    </div> 
+</div>
+    
+</body> 
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin:60px
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a register page
+  <br>
+  <br>
+  <a href="https://drive.google.com/file/d/1u2tAzEVNlHcFGqAPN6SEQsdya9pU_i57/view" target="_blank">Presentation ( thanks, Maksat Galiyev )</a>
+  <br>
+  <br>
+  <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">w3schools</a>
+  <br>
+  <br>
+  <li>what we need ( what type of input to use ) additional</li>
+  <ul>
+    <li>email (email) required </li>
+    <li>password (password) requred</li>
+    <li>image (file)</li>
+    <li>Full name (text) required</li>
+    <li>Birth date (date) required</li>
+    <li>birth hour (time)</li>
+    <li>gender (radio) required</li>
+    <li>favorite color (color)</li>
+    <li>country of birth (select box)</li>
+    <li>Favorite car ( textarea ) disabled</li>
+  </ul>
+
+  <div class="popup">
+    <h2>Welcome Guest!</h2>
+    <p>Please enter your login and password here</p>
+    <div>
+        <label for="email">Login </label>
+        <input type="text" id="username" value="" />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" value="" />
+    </div>
+  <input type="button" value="Log In" />
+
+
+    <a class="close" href="#close"></a>
+</div>
+
+
+ <div class="popup">
+<h2>Register</h2>
+<p>Please enter your details here</p>
+<div>
+    <label for="email">Login (Username)</label>
+    <input type="text" id="username" value="" />
+</div>
+<div>
+    <label for="pass">Password</label>
+    <input type="password" id="password" value="" />
+</div>
+
+<button onclick="store()" type="button">Sign up </button>   or   <a href="#login_form" id="login_pop">Log In</a>
+
+<a class="close" href="#close"></a>
+</div>
+</div>
+<script>
+  //function to store user name and password
+function store () {
+     var inputUsername= document.getElementById("username");
+     var inputPassword= document.getElementById("password");
+     localStorage.setItem("username", inputUsername.value);
+     localStorage.setItem("password", inputPassword.value);
+    };
+
+
+    //function to sign in
+    function login() {
+ var inputUsername = localStorage.getItem("username");
+ var inputPassword = localStorage.getItem("password");
+
+ if (username != "undefined" || username != "null" || password != "undefined" || password !="null")
+ {
+    document.getElementByID('welcomeMessage').innerHTML = "Welcome " + username + "!";
+    } else
+     document.getElementById('welcomeMessage').innerHTML = "Hello!";
+     }
+
+</script> -->
+
+  <form id="login-form" action="submit">
+    
+      <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" placeholder="Eg. jane_doe" required/>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required />
+      </div>
+    
+      <span>
+        <input id="register" type="radio" name="login_type" value="register" checked="checked">
+        <label for="register">Register</label>
+      </span>
+      <span>
+        <input id="login" type="radio" name="login_type" value="login">
+        <label for="login">Login</label>
+      </span>
+   
+    <input type="submit" value="Submit" />
+  
+    <output name="result"></output>
+  </form>
+<script>
+  window.addEventListener("DOMContentLoaded", setupForm);
+
+function setupForm(){
+	const form = document.getElementById("login-form");
+	form.addEventListener("submit", handleSubmit);
+}//setupForm
+
+function handleSubmit(event){
+	event.preventDefault();
+
+	const {
+		username,
+		password,
+		login_type,
+		result
+	} = event.target;
+
+	const processUser = login_type.value == "register" ? registerUser : loginUser;
+	const response    = processUser(username.value, password.value);
+	result.innerHTML  = response; 
+}//handleSubmit
+
+function registerUser(username, password){
+	window.localStorage.setItem("exampleLogin__username", username);
+	window.localStorage.setItem("exampleLogin__password", password);
+
+	return `New user ${username} now registered!`;
+}//registerUser
+
+function loginUser(username, password){
+	const registeredUser     = window.localStorage.getItem("exampleLogin__username");
+	const registeredPassword = window.localStorage.getItem("exampleLogin__password");
+
+	const validUser     = username == registeredUser;
+	const validPassword = password == registeredPassword;
+
+	if(validUser && validPassword){
+    window.location.href="lecture.html";
+  	}
+        else if(!validUser)     return `Username ${username} has not been registered. `;
+	else if(!validPassword) return `Incorrect password for username ${username}`;
+}//loginUser
+</script>
+</body>
+</html>

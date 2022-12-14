@@ -1,0 +1,18 @@
+body{
+    background-image: url(https://get.wallhere.com/photo/sunlight-fall-leaves-red-reflection-photography-yellow-morning-on-the-floor-maple-leaves-light-color-autumn-leaf-flower-season-darkness-computer-wallpaper-close-up-macro-photography-68989.jpg);
+    background-position: absolute;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-position: center;
+        background-position-y: -200px;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:500px) {
+    body{
+        background-position: absolute;
+        background-position-y: -350px;
+    }
+}
